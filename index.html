@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>iSSBB</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+    <body>
+        <div class="d-flex " id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom"><img src="assets/favicon.ico"><b>iSSBB</b> </div>
+                <div class="list-group list-group-flush font-weight-bold ">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red text-black" href="#!" onclick="loadHome()">Home</a>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Donors</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Secretary</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Homologous</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Autologous</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Apheresis Homologous Donation</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Apheresis Autologous Donation</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">External Donation</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Donors Test</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Donor Interview</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Rejected Donors</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Change Donation Info</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Donor's Report</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Donor's List</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Volunteers Phone Book</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Donation Schedule</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Blood Group</a>
+                        <div class="dropdown-menu">
+                         <a class="dropdown-item text-black w3-hover-pale-red" href="#!">Blood Group Determination</a>
+                         <a class="dropdown-item text-black w3-hover-pale-red" href="#!">Blood Group Double Check</a>
+                         <a class="dropdown-item text-black w3-hover-pale-red" href="#!">List of Donations</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Serology</a>
+                        <div class="dropdown-menu">
+                         <a class="dropdown-item text-black w3-hover-pale-red" href="#!">Serology</a>
+                         <a class="dropdown-item text-black w3-hover-pale-red" href="#!">Serology Double Check</a>
+                         <div class="dropdown-divider"></div>
+                         <a class="dropdown-item text-black w3-hover-pale-red" href="#!">List of Tests</a>
+                         <a class="dropdown-item text-black w3-hover-pale-red" href="#!">List of + Serology</a>
+                         <div class="dropdown-divider"></div>
+                         <a class="dropdown-item text-black w3-hover-pale-red" href="#!">Quarantine</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Processing</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Component Preparation</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">List of Units</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">List of Autologous Units</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">List of Returns</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">List of Units Situation</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Splitting</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Pooling</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Reconstitution</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Treatment</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Patient</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Patient Info</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Patient Blood Grouping</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Patient Blood Group Double Check</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Patient Serology</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Patient Tests</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Reserve/X-Match/Release</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Credits Management</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Inerchange The Credits</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Unknown Creditors</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Blood Request</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">List of Patients</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">List of Patient Units</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Electronic Crossmatch</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Unit Reception And Transfusion</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Labels Validation</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Leaving Paients</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">List of Sero For Patients</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Centralized</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Order Request</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">List of Requested Units</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Send E-Mail Of Requested Units</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Donwload Emails And Auto Check</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">External Delivery With Special Bar Code</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Satellite Donation With Special Bar Code</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Units</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">External Delivery</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Check The Units' Expiry Date</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Check The Unit's Situation</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">List of Wasted Units</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Find a Special Unit</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Free Reserved Units</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Bed Side Control</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Unit Log</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Retained Units</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black text-wrap" data-toggle="dropdown">Blood Stock Management System</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Change Unit Location</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Minimum Quantity</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Stock Management Report</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Reports</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Multiple Criteria Statistics</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Statistic Module - Complete Set</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Output To Ms-Excel</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">List of transfused units/service/time</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">External Link</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Receive Patients from HMS</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Send Exams to HMS for Billing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Link To External Machines</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Billing setup</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Billing reports</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Traceability</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Unit Tracing</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Donor Tracing</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Patient Tracing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Patient Tree</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Warnings Log</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Operators Log</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Users Activities</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Bio-Banking</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Bio-Banking Setup</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Bio-Banking Search</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Bio-Banking</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">ID-Panel</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Lot Setup</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Antibody Identification</a>
+                    </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Tools</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Collection Point</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Quality Control</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">M.O.H. Statistics</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">M.O.H. Requirements</a>
+                    </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Setup</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Users and Permissions Setup</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Company Information Setup</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">System Setup</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Blood Groups Compatibilities</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Qualifications Table Setup</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Questions setup</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Laboratory Tests Setup</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Counters Setup</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Database Utilities</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Transporters Table Setup</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Select a printer</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Translation</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Languages</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropright ">
+                        <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red dropdown-toggle text-black" data-toggle="dropdown">Help</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Backup/Restore</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">SSBB Map</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">New Upgrade</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">About</a>
+                            <a class="dropdown-item text-black w3-hover-pale-red" href="#">Help</a>
+                    </div>
+                    </div>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 w3-hover-pale-red text-black" href="#!" onclick="loadTab1()">Life Saving</a>
+                    
+                </div>
+            </div>
+            <!-- END Sidebar-->
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light  border-bottom bg-danger ">
+                    <div class="container-fluid bg-danger">
+                        <button class="btn btn-danger" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+                        <b><a class="nav-link text-white" href="login.html">Logout</a></b>
+                       
+                    </div>
+                </nav>
+                 <!-- END Top navigation-->
+                <!-- Page content-->
+                <div class="container-fluid " id="content">  </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/loadMain.js"></script>         
+    </body>
+</html>
